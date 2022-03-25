@@ -1,0 +1,17 @@
+# IDE
+.vscode
+
+# PHP
+vendor/
+
+# Build
+build/
+
+# Unit tests
+.phpunit.cache
+
+# Local
+var
+local
+*.local
+*.local.*

@@ -1,0 +1,43 @@
+{
+    "name": "fastwf/web-form",
+    "description": "Integration tools of fastwf/form library in fastwf application.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "David BELBEZE",
+            "email": "david.belbeze@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/Fastwf/api"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/Fastwf/constraint"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/Fastwf/form"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Fastwf\\WebForm\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Fastwf\\Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "fastwf/form": "dev-master"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9"
+    }
+}
