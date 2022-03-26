@@ -158,12 +158,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Fastwf/form.git",
-                "reference": "2911f788590fcd50b09a27fa92b9f9fbee0ea541"
+                "reference": "5aaa70b38f9e6296394748a770c9a78bd19a0bdf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Fastwf/form/zipball/2911f788590fcd50b09a27fa92b9f9fbee0ea541",
-                "reference": "2911f788590fcd50b09a27fa92b9f9fbee0ea541",
+                "url": "https://api.github.com/repos/Fastwf/form/zipball/5aaa70b38f9e6296394748a770c9a78bd19a0bdf",
+                "reference": "5aaa70b38f9e6296394748a770c9a78bd19a0bdf",
                 "shasum": ""
             },
             "require": {
@@ -201,7 +201,7 @@
                 "source": "https://github.com/Fastwf/form/tree/master",
                 "issues": "https://github.com/Fastwf/form/issues"
             },
-            "time": "2022-03-22T20:23:21+00:00"
+            "time": "2022-03-26T18:04:29+00:00"
         },
         {
             "name": "fastwf/interpolation",
