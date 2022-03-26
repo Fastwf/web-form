@@ -22,4 +22,4 @@ jobs:
         composer install
     - name: Run tests
       run: |
-        php vendor/bin/phpunit tests
+        php vendor/bin/phpunit tests --stderr
