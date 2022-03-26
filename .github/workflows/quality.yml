@@ -1,0 +1,32 @@
+name: "Code quality"
+
+on: [push]
+
+jobs:
+  quality:
+    name: "Code quality scan"
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
+    - name: Setup php version
+      uses: shivammathur/setup-php@v2
+      with:
+        php-version: '7.4'
+        coverage: xdebug2
+        tools: composer:v2
+    - name: Install dependencies
+      run: |
+        composer install
+    - name: Run tests
+      run: |
+        php vendor/bin/phpunit tests --coverage-clover build/logs/clover.xml --log-junit build/logs/execution.xml --stderr
+    - name: Fix code coverage paths for SonarCloud Scan
+      run: |
+        sed -i 's@'$GITHUB_WORKSPACE'@/github/workspace/@g' build/logs/clover.xml build/logs/execution.xml
+    - name: SonarCloud Scan
+      uses: SonarSource/sonarcloud-github-action@master
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
