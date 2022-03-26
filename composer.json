@@ -22,6 +22,10 @@
         {
             "type": "vcs",
             "url": "https://github.com/Fastwf/form"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/Fastwf/core"
         }
     ],
     "autoload": {
@@ -35,7 +39,8 @@
         }
     },
     "require": {
-        "fastwf/form": "dev-master"
+        "fastwf/form": "dev-master",
+        "fastwf/core": "dev-master"
     },
     "require-dev": {
         "phpunit/phpunit": "^9"

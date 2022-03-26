@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a3a88198b0584db7387427767a42ed15",
+    "content-hash": "fe0f184f0b9922d66b25b2bd98ad74f2",
     "packages": [
         {
             "name": "fastwf/api",
@@ -102,6 +102,55 @@
                 "issues": "https://github.com/Fastwf/constraint/issues"
             },
             "time": "2022-03-16T20:15:01+00:00"
+        },
+        {
+            "name": "fastwf/core",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Fastwf/core.git",
+                "reference": "b22489a06f9b10e0f959f5359a6ad707f44b0187"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Fastwf/core/zipball/b22489a06f9b10e0f959f5359a6ad707f44b0187",
+                "reference": "b22489a06f9b10e0f959f5359a6ad707f44b0187",
+                "shasum": ""
+            },
+            "require": {
+                "fastwf/api": "dev-master",
+                "psr/log": "^1.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Fastwf\\Core\\": "src/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Fastwf\\Tests\\": "tests/"
+                }
+            },
+            "license": [
+                "MIT License"
+            ],
+            "authors": [
+                {
+                    "name": "David BELBEZE",
+                    "email": "david.belbeze@gmail.com"
+                }
+            ],
+            "description": "Core module of fast web framework",
+            "support": {
+                "source": "https://github.com/Fastwf/core/tree/master",
+                "issues": "https://github.com/Fastwf/core/issues"
+            },
+            "time": "2022-03-20T11:33:21+00:00"
         },
         {
             "name": "fastwf/form",
@@ -250,6 +299,56 @@
                 "source": "https://github.com/php-fig/http-message/tree/master"
             },
             "time": "2019-08-29T13:16:46+00:00"
+        },
+        {
+            "name": "psr/log",
+            "version": "1.1.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/log.git",
+                "reference": "d49695b909c3b7628b6289db5479a1c204601f11"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/d49695b909c3b7628b6289db5479a1c204601f11",
+                "reference": "d49695b909c3b7628b6289db5479a1c204601f11",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Log\\": "Psr/Log/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "https://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for logging libraries",
+            "homepage": "https://github.com/php-fig/log",
+            "keywords": [
+                "log",
+                "psr",
+                "psr-3"
+            ],
+            "support": {
+                "source": "https://github.com/php-fig/log/tree/1.1.4"
+            },
+            "time": "2021-05-03T11:20:27+00:00"
         }
     ],
     "packages-dev": [
@@ -2368,7 +2467,8 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "fastwf/form": 20
+        "fastwf/form": 20,
+        "fastwf/core": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
